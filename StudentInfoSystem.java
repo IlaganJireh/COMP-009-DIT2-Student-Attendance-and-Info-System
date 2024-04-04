@@ -1,3 +1,7 @@
+package COMP009;
+
+import java.util.Scanner; // Added import statement
+
 public class StudentInfoSystem {
     public static void main(String[] args) {
         // Create a Scanner object to read input
@@ -35,10 +39,8 @@ public class StudentInfoSystem {
         // Create a new Student object with the entered information
         Student student = new Student(name, age, birthday, address, studentNumber, year, section, arrivalTime, dismissalTime);
 
-        // Display student information
         student.displayInfo();
 
-        // Close the Scanner object
         scanner.close();
     }
 }
